@@ -3,7 +3,7 @@ const axios = require("axios");
 const router = express.Router();
 
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
-const TMDB_BASE = "https://cors.eu.org/https://api.themoviedb.org/3";
+const TMDB_BASE = "https://api.themoviedb.org/3";
 
 // Helper: forward a TMDB request and return the data
 const tmdb = (path, params = {}) =>
