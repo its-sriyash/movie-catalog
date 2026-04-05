@@ -155,7 +155,38 @@ The app will be running at **http://localhost:5173** 🎉
 
 ## 📸 Screenshots
 
-> *Coming soon — add your own screenshots here!*
+### 🏠 Home Page
+> Hero section with trending movies, genre filters, and the cinematic dark theme.
+
+![Home Page](./screenshots/home.png)
+
+---
+
+### 🔍 Search
+> Real-time search results — here showing results for "Inception".
+
+![Search Results](./screenshots/search.png)
+
+---
+
+### 🎬 Movie Details
+> In-depth movie page with cast, genres, ratings, trailer link, and watchlist actions.
+
+![Movie Detail](./screenshots/movie-detail.png)
+
+---
+
+### 😎 CineMood
+> Discover movies by mood — Neo-Noir, Psycho-Thriller, Feel-Good, Anime, and more.
+
+![CineMood](./screenshots/cinemood.png)
+
+---
+
+### 🔐 Authentication
+> Clean sign-in page with a featured movie carousel.
+
+![Auth Page](./screenshots/auth.png)
 
 ---
 
