@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2f2d2d;
+  font-family: 'Segoe UI', sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+html {
+  overflow-y: scroll;
+}
+
+/* Movie Grid */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  padding: 0 20px 40px;
+}
+
+/* Load More Button */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .movie-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 0 12px 40px;
+  }
+
+  .page-title {
+    font-size: 22px !important;
+    padding: 10px 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 10px 40px;
+  }
+}
+
+/* Skeleton Loader */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-box {
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-card {
+  width: 100%;
+  border-radius: 10px;
+  background: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 270px;
+  border-radius: 10px 10px 0 0;
+}
+
+.skeleton-text {
+  height: 14px;
+  border-radius: 4px;
+  margin: 12px 10px 0;
+}
+
+.skeleton-text.short {
+  width: 50%;
+  margin: 8px auto 0;
+}
+
+.skeleton-text.date {
+  width: 35%;
+  margin: 8px auto 0;
+}
+
+.movie-grid img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Dropdown Button Hover State */
+.dropdown-btn {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  color: #f2f4f8;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s, color 0.2s;
+  width: 100%;
+}
+
+.dropdown-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
